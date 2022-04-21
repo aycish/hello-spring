@@ -1,4 +1,4 @@
-package com.example.hello.controller;
+package com.example.hello.get;
 
 import java.util.Map;
 
