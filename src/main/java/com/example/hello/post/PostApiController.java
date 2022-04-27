@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.hello.dto.PostRequestDto;
 
 @RestController
-@RequestMapping("/papi")
+@RequestMapping("/api/post")
 public class PostApiController {
 
-	@PostMapping("/post")
+	@PostMapping("/map")
 	public void post(@RequestBody Map<String, Object> requestData) {
 		System.out.println("---------------------");
 		requestData.entrySet().forEach(stringObjectEntry -> {
@@ -23,7 +23,7 @@ public class PostApiController {
 		});
 	}
 
-	@PostMapping("/post-dto")
+	@PostMapping("/dto")
 	public void postDto(@RequestBody PostRequestDto requestData) {
 		System.out.println(requestData);
 	}
