@@ -5,7 +5,7 @@ import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.annotation.JsonNaming;
 
 @JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
-@JsonInclude(JsonInclude.Include.ALWAYS.NON_NULL)
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class User {
 
 	private String name;
